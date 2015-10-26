@@ -1,0 +1,51 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+
+// Import Modules
+@import '../_modules/link/link';
+
+// Styling on warning for users on IE7 or below
+.browsehappy {
+  text-align: center;
+  margin: 0;
+  background: #fff8e2;
+  color: #000;
+  padding: 0.5em 0;
+}
+
+
+// Override Bootstrap variables 
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "mixins/bootstrap-offcanvas";
+
+// DEFAULT PAGE STUFF
+
+$page-max-width: 1200px;
+
+// Colors
+$c-action: red;
+
+.container, .container-fluid {
+    max-width: $page-max-width;
+}
+section {
+    @include make-row();
+}
+
+.btn-action {
+    @include button-variant(white,$c-action,$c-action);
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/* TOP LINKS */
+.nav-top-link {
+
+}
+
+

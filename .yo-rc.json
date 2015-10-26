@@ -1,0 +1,13 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Yeogurt generator with bootstrap",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "sass",
+      "sassSyntax": "scss",
+      "testFramework": "jasmine"
+    },
+    "version": "1.3.3"
+  }
+}
